@@ -71,3 +71,8 @@ app.post("/contact", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
+
+
+app.get("/",async(req,res)=>{
+    res.status(200).json('Backend is listening');
+})
