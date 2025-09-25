@@ -35,7 +35,7 @@ app.post("/contact", async (req, res) => {
     });
 
     // Path to your PDF file
-    const pdfPath = path.join(__dirname, "Mani_Resume_Updated.pdf");
+    const pdfPath = path.join(__dirname, "ManiKumar_Resume.pdf");
 
     // Send email to user
     await transporter.sendMail({
@@ -47,7 +47,7 @@ app.post("/contact", async (req, res) => {
       <p>I am attaching my Resume for your reference , if my profile is fit for your requirement please contact me.</p>`,
       attachments: [
         {
-          filename: "Mani_Resume_Updated.pdf", // Name of the file in the email
+          filename: "ManiKumar_Resume.pdf", // Name of the file in the email
           path: pdfPath, // Path to the file on the server
           contentType: "application/pdf", // MIME type of the file
         },
